@@ -60,7 +60,7 @@ a { color: inherit; }
 .btn.btn:focus-visible { outline: none; box-shadow: 0 2px 0 var(--edge), 0 0 0 4px var(--ring, rgba(108,0,193,.35)); }
 .btn svg { width: 16px; height: 16px; fill: currentColor; flex: none; }
 .btn--sm { min-height: 36px; padding: 0 15px; font-size: 13.5px; }
-.btn--lg { min-height: 50px; padding: 0 26px; font-size: 16px; }
+.btn--lg { min-height: 44px; padding: 0 26px; font-size: 14px; }
 .btn--acid { --ring: rgba(217,255,47,.55); background: linear-gradient(180deg, #ecff67, var(--acid)); }
 .btn--acid:hover { background: linear-gradient(180deg, #f3ff8a, #dfff38); }
 .btn--cyan { --edge: #04363b; --ring: hsl(180 65% 54% / .45); color: #031a1d;
