@@ -28,6 +28,7 @@ Product demo sources, for future ports:
 - **Motion respects the visitor.** Every animation stops under `prefers-reduced-motion: reduce`. The AuntCore fan opens without animating.
 - **No sideways scroll** at any width from 360 px up. Grid columns use `minmax(0, …)` so long content cannot widen them.
 - **Page weight.** No fixed budget, by owner decision. Keep images as compressed JPEG and add nothing heavy without reason.
+- **Cache busting.** GitHub Pages lets browsers cache files for 10 minutes, and some keep them longer. After changing `style.css`, `assets/products.css`, `assets/products.js`, or `assets/cv-data.js`, bump the `?v=` value on its link in `index.html` so visitors get the new file.
 - **Privacy.** No email address in any public file. No trackers or third-party scripts beyond Google Fonts.
 
 ## Content
