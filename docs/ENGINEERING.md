@@ -11,7 +11,8 @@ Checked: 2026-09-22.
 | `assets/products.css` | The AuntCore and Journal Rounds demos, ported from their product sites. |
 | `assets/products.js` | Builds the AuntCore fan, its particle stream, and the question card. Drives the Journal Rounds pointer spotlight. |
 | `assets/cv-data.js` | Facts: name, headline, bio, interests, links, and the full CV sections. |
-| `assets/og-source.html` | Source for `assets/og-image.png`, the 1200×630 share image. |
+| `assets/og-source.html` | Source for `assets/og-image.jpg`, the 1200×630 share image. It renders the real AuntCore fan and a Journal Rounds screenshot. |
+| `robots.txt`, `sitemap.xml` | Let search engines crawl the page and find it. Update `lastmod` in the sitemap after meaningful changes. |
 | `assets/fonts/` | DM Sans and Libre Baskerville, copied from the Journal Rounds landing page. |
 
 Product demo sources, for future ports:
@@ -33,11 +34,22 @@ Product demo sources, for future ports:
 
 To change a fact, edit `assets/cv-data.js`, then update the same text in `index.html`. Fields the page uses: `name`, `headline`, `bio`, `interests`, `x`, and `linkedin`. Product copy, Previously, Publications, and Education are written directly in `index.html`.
 
-After changing the headline or product lines, regenerate the share image:
+After changing the headline, statement, or products, regenerate the share image from the project root:
 
 ```bash
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --hide-scrollbars --window-size=1200,630 --screenshot="$PWD/assets/og-image.png" "file://$PWD/assets/og-source.html"
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --hide-scrollbars --force-prefers-reduced-motion --virtual-time-budget=6000 --window-size=1200,630 --screenshot="$PWD/assets/og.png" "file://$PWD/assets/og-source.html"
+sips -s format jpeg -s formatOptions 88 assets/og.png --out assets/og-image.jpg && rm assets/og.png
 ```
+
+Social sites cache share images by URL. When the image changes a lot, save it under a new filename and update the four image tags in `index.html`, so X and LinkedIn fetch the new one.
+
+## Search and sharing
+
+- `<title>` and the meta description name him, his role, and both products. Keep the description under about 160 characters.
+- His name is the page's only `<h1>`. The large statement is a styled paragraph.
+- A JSON-LD `Person` block in `index.html` lists his role, affiliation, schools, interests, X and LinkedIn profiles, and both products. Keep it in step with `assets/cv-data.js`.
+- Open Graph and Twitter tags use absolute URLs and a 1200×630 JPEG. `rel="me"` links tie the page to his X and LinkedIn.
+- To refresh a LinkedIn preview after a change, paste the URL into LinkedIn's Post Inspector.
 
 ## Hosting
 

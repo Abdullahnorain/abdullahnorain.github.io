@@ -21,4 +21,4 @@ Open http://127.0.0.1:8765/. In Claude Code, the `cv-preview` entry in `.claude/
 7. **Console.** No errors in the browser console.
 8. **Facts match.** Text filled from `assets/cv-data.js` matches the fallback text in `index.html`.
 
-After pushing, open https://abdullahnorain.github.io/ and repeat checks 1 and 3 on the live site. To check the share preview, paste the link into an X or LinkedIn post draft.
+After pushing, open https://abdullahnorain.github.io/ and repeat checks 1 and 3 on the live site. To check the share preview, paste the link into an X or LinkedIn post draft, or into LinkedIn's Post Inspector at https://www.linkedin.com/post-inspector/.
