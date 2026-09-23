@@ -81,7 +81,7 @@ a { color: inherit; }
 .who-tag { margin: 0; color: var(--mute); }
 .links { display: flex; flex-wrap: wrap; gap: 8px; }
 .hero { padding: 40px 0 36px; }
-.hero .statement { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(44px, 8vw, 108px); line-height: .96; letter-spacing: -0.015em; max-width: 21ch; }
+.hero .statement { margin: 0; font-family: var(--serif); font-weight: 400; font-size: clamp(44px, 8vw, 108px); line-height: .96; letter-spacing: -0.015em; max-width: 21ch; text-wrap: balance; }
 @media (min-width: 900px) { .hero { padding: 64px 0 56px; } }
 
 /* ---------- Sections ---------- */

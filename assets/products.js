@@ -45,7 +45,7 @@
       var slot = el('div', 'ac-fan-slot');
       slot.style.setProperty('--fan-angle', b[0] + 'deg');
       slot.style.setProperty('--fan-index', i);
-      slot.innerHTML = '<div class="ac-fan-hover-group"><span class="ac-fan-emoji" aria-hidden="true">' + b[1] + '</span>' +
+      slot.innerHTML = '<div class="ac-fan-hover-group">' +
         '<div class="ac-fan-book ' + b[2] + '"><div class="ac-fan-cover"><span class="ac-fan-frame"></span><span class="ac-fan-glare"></span>' +
         '<span class="ac-fan-edition">' + b[3] + '</span><span class="ac-fan-title">' + b[4] + '<br>' + b[5] + '</span>' +
         '<span class="ac-fan-author">' + b[6] + '</span><span class="ac-fan-publisher">' + b[7] + '</span></div></div></div>' +

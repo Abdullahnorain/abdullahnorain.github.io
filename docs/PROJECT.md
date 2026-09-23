@@ -12,7 +12,7 @@ Audience: physicians, residents, collaborators, and people who find him on X or 
 
 The order below is a decision by the owner. Keep it.
 
-1. **Header and statement.** Name, the headline "Diagnostic radiology resident and healthtech builder.", X and LinkedIn buttons, and the line "I read scans by day and build software for physicians."
+1. **Header and statement.** Name, the headline "Diagnostic radiology resident and healthtech builder.", X and LinkedIn buttons, and the line "I read scans by day and build software for physicians by night."
 2. **About.** A short bio and an Interests list.
 3. **Now building.** AuntCore (web app) and Journal Rounds (iOS app). Each has a live demo ported from the product's own site, a description of what he built, and a button to the product.
 4. **Previously.** PeerCapsule, then Wellow.
